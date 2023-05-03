@@ -16,6 +16,9 @@ final class Logger
         $fp = fopen(date('Ymd').'.log', 'a');//opens file in append mode
         fwrite($fp, $text."\n");
         fclose($fp);
+        if($type=='message'){
+            return $this;
+        }
         echo "$text\n";
     }
 

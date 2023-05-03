@@ -1,7 +1,7 @@
 <?php
 
 
-namespace App;
+namespace App\Config;
 
 use App\Logger\Logger;
 use Symfony\Component\DomCrawler\Crawler;
@@ -27,7 +27,8 @@ class Config
         });
 
         $this->log->info('Processing Ended');
-        return json_encode($this->data_text);
+        $this->log->message(json_encode($this->data_text));
+        return 'done';
     }
 
 
