@@ -11,7 +11,7 @@ class Route
 
     public static function getRoute()
     {
-        return (new Request())->request()->path_info;
+        return (new Request())->request()->path_info ?? '';
     }
 
 

@@ -11,14 +11,14 @@ class HomeController
 
     public function index(){
 
-        $users=Manager::table('users')->get();
+//        $users=Manager::table('users')->get();
+        $users="I love me and i am runing on docker";
         return HtmlView::view('home',['users'=>$users]);
     }
 
 
     public function admin(){
         $id= Request::get('id');
-
         return 'I am admin '.$id;
     }
 }

@@ -2,12 +2,13 @@
 
 namespace App\Route;
 use App\Request\Request;
+use App\Request\Route;
 use App\Request\Route as Route2;
 
 
-$path=(new Request())->request()->path_info;
+$path=Route::getRoute();
 
-if($path=='/allUser'){
+if($path=='/allUser' || $path=='/'){
    return  Route2::get('/allUser','HomeController@index');
 }
 
