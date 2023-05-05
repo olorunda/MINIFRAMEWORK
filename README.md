@@ -1,10 +1,10 @@
 ## MINI FRAMEWORK
 
-Create Your Routes in app/Route/Route.php
+-> Create Your Routes in app/Route/Route.php
 
-Create your views in resources
+-> Create your views in resources
 
-Create your controller in Controllers
+-> Create your controller in Controllers
 
 Configure your database in config/bootsrap
 
