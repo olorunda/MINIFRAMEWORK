@@ -53,3 +53,5 @@ e.g if you Console name is Crawl and has method crawWebsite that accept argument
         `php artisan.php Crawl crawWebsite 'http://url-to-crawl';`
 
 * To run the application 
+       
+       php mini serve
