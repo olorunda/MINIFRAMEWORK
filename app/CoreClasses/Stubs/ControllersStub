@@ -1,0 +1,20 @@
+<?php
+
+
+namespace App\Controllers;
+use App\CoreClasses\Request\Request;
+use App\CoreClasses\View\HtmlView;
+use Illuminate\Database\Capsule\Manager;
+use App\CoreClasses\Controller\BaseController;
+
+class #controllersname extends BaseController
+{
+
+
+
+    public function index(){
+        return 'i am a controller';
+    }
+
+
+}

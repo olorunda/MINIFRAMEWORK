@@ -3,9 +3,9 @@
 
 namespace App\Console;
 
-use App\Logger\Logger;
+use App\CoreClasses\Logger\Logger;
 use Symfony\Component\DomCrawler\Crawler;
-use App\Request\Request;
+use App\CoreClasses\Request\Request;
 class Config
 {
     public  $log;

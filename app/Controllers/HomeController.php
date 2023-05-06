@@ -2,18 +2,18 @@
 
 
 namespace App\Controllers;
-use App\Request\MiddleWare;
-use App\Request\Request;
-use App\View\HtmlView;
+use App\CoreClasses\Controller\BaseController;
+use App\CoreClasses\Request\Request;
+use App\CoreClasses\View\HtmlView;
 use Illuminate\Database\Capsule\Manager;
 
-class HomeController
+class HomeController extends BaseController
 {
 
-//    public function __construct()
-//    {
-//        (new MiddleWare())->onlyAdmin();
-//    }
+    public function __construct()
+    {
+        $this->middleware('adminonly');
+    }
 
     public function index(){
 

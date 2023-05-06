@@ -1,7 +1,7 @@
 <?php
 
 
-namespace App\Request;
+namespace App\CoreClasses\Request;
 
 
 class MiddleWare
@@ -15,7 +15,5 @@ class MiddleWare
         $this->$name();
     }
 
-    public function onlyAdmin(){
-        exit('You are not allowed to access this route');
-    }
+
 }

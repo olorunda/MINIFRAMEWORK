@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Logger;
+namespace App\CoreClasses\Logger;
 
 
 

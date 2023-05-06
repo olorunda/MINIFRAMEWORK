@@ -1,9 +1,9 @@
 <?php
 
 namespace App\Route;
-use App\Request\Request;
-use App\Request\Route;
-use App\Request\Route as Route2;
+use App\CoreClasses\Request\Request;
+use App\CoreClasses\Request\Route;
+use App\CoreClasses\Request\Route as Route2;
 
 
 $path=Route::getRoute();
@@ -13,7 +13,7 @@ if($path=='/allUser' || $path=='/'){
 }
 
 if($path=='/admin/user'){
-   return  Route2::get('/admin/user','HomeController@admin',['middleware'=>['onlyadmin']]);
+   return  Route2::get('/admin/user','HomeController@admin');
 }
 
 

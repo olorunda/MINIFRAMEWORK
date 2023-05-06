@@ -11,3 +11,5 @@ $capsule->addConnection([
 ]);
 $capsule->setAsGlobal();
 $capsule->bootEloquent();
+
+define('BASEPATH',dirname( __FILE__,2 ) ) ;

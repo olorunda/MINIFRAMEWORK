@@ -1,13 +1,15 @@
 <?php
 
 
-namespace App\Request;
+namespace App\CoreClasses\Request;
 
+
+use App\CoreClasses\Traits\MiddleWareTrait;
 
 class Route
 {
 
-
+use MiddleWareTrait;
     public static function getRoute()
     {
         return (new Request())->request()->path_info ?? '';
@@ -46,7 +48,7 @@ class Route
     public static function callController($class_method, array $middleware = [])
     {
 
-        self::middleware($middleware);
+        self::middlewareroute($middleware);
 
 
         $class = explode('@', $class_method);
@@ -55,15 +57,8 @@ class Route
         return (new $class_name())->$method();
     }
 
-    private static function middleware($middleware): void
+    private static function middlewareroute($middleware): void
     {
-
-        if ($middleware != []) {
-            foreach ($middleware['middleware'] as $middle) {
-
-                (new MiddleWare())->$middle();
-            }
-
-        }
+        (new Route())->middleware($middleware);
     }
 }

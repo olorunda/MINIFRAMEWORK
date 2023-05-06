@@ -1,14 +1,13 @@
 <?php
 
-namespace App\View;
-use App\Request\Request;
+namespace App\CoreClasses\View;
 class HtmlView
 {
 
     public static function view($html_view,$data){
 
         extract($data, EXTR_PREFIX_SAME, "wddx");
-        $html= include $_SERVER['DOCUMENT_ROOT'].'/resources/'.$html_view.'.php';
+        $html= include BASEPATH.'/resources/'.$html_view.'.php';
         return $html;
     }
 
