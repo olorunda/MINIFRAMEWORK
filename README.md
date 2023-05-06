@@ -12,7 +12,7 @@
     
         return HtmlView::view('home');
     
-    #####you can also pass data parameter to be used in html view 
+    ##### you can also pass data parameter to be used in html view 
     
         $users=['name'=>'Adeolu','email'=>'Olusola@gmail.com']
    
@@ -26,7 +26,7 @@
 
     `php mini Make MiddleWare MiddleWareName`
     
-####To Use Created MiddleWare 
+#### To Use Created MiddleWare 
    
    * In your route you can use it like this
    
