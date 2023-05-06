@@ -13,7 +13,7 @@ if($path=='/allUser' || $path=='/'){
 }
 
 if($path=='/admin/user'){
-   return  Route2::get('/admin/user','HomeController@admin');
+   return  Route2::get('/admin/user','HomeController@admin',['middleware'=>['onlyadmin']]);
 }
 
 

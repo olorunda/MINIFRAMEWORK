@@ -2,12 +2,18 @@
 
 
 namespace App\Controllers;
+use App\Request\MiddleWare;
 use App\Request\Request;
 use App\View\HtmlView;
 use Illuminate\Database\Capsule\Manager;
 
 class HomeController
 {
+
+//    public function __construct()
+//    {
+//        (new MiddleWare())->onlyAdmin();
+//    }
 
     public function index(){
 

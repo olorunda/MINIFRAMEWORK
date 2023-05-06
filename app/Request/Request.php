@@ -46,14 +46,14 @@ class Request
     public function realGet($key)
     {
 
-        parse_str(@$this->server_object['query_string'], $output);
+        @parse_str(@$this->server_object['query_string'], $output);
 
         return @$output[$key];
     }
 
     public function realAll()
     {
-        parse_str(@$this->server_object['query_string'], $output);
+        @parse_str(@$this->server_object['query_string'], $output);
         return $output;
     }
 
