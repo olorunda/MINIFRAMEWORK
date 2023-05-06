@@ -8,7 +8,7 @@
 
         php mini Make Controller ControllerName
     
-    #####to return an html view in your controller , 
+    ##### to return an html view in your controller , 
     
         return HtmlView::view('home');
     
