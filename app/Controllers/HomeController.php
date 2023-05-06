@@ -12,7 +12,7 @@ class HomeController extends BaseController
 
     public function __construct()
     {
-        $this->middleware('adminonly');
+//        $this->middleware('adminonly');
     }
 
     public function index(){

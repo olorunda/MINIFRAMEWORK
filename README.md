@@ -1,4 +1,4 @@
-## MINI FRAMEWORK
+#### A PLAYGROUND MINI PHP FRAMEWORK , WORK IN PROGRESS
 
 * Create Your Routes in app/Route/Route.php
 
@@ -26,7 +26,7 @@
 
     `php mini Make MiddleWare MiddleWareName`
     
-#####To Use Created MiddleWare 
+####To Use Created MiddleWare 
    
    * In your route you can use it like this
    
