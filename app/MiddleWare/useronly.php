@@ -9,7 +9,7 @@ class useronly extends MiddleWare
 {
 
    public function run(){
-        exit('Only User Access');
+        exit('Invalid Request');
    }
 
 }

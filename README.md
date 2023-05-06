@@ -1,4 +1,4 @@
-#### A PLAYGROUND MINI PHP FRAMEWORK , WORK IN PROGRESS
+### A PLAYGROUND MINI PHP FRAMEWORK , WORK IN PROGRESS
 
 * Create Your Routes in app/Route/Route.php
 
@@ -51,3 +51,5 @@ To run console application
 e.g if you Console name is Crawl and has method crawWebsite that accept argument $url
 
         `php artisan.php Crawl crawWebsite 'http://url-to-crawl';`
+
+* To run the application 
