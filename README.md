@@ -22,6 +22,22 @@
 
     `php mini Make Command CommandName`
     
+* Create model in app/Models using this command 
+    
+        php mini Make Model ModelName
+
+* Create migration in app/Migrations using this command 
+    
+        php mini Make Migration MigrationName
+
+* Run Migration using this command 
+    
+        php mini Migrate
+
+* Rollback Migration using this command 
+    
+        php mini Migrate:rollback
+           
 * Create middleware in app/MiddleWare 
 
     `php mini Make MiddleWare MiddleWareName`
@@ -34,7 +50,7 @@
    
    * In your controller , you can use it like this
    
-         `$this->middleware('MiddleWareName')`
+         $this->middleware('MiddleWareName')
 
 Configure your database in config/bootsrap
 
@@ -46,11 +62,11 @@ For Console Application
 
 To run console application
 
-        `php artisan.php ConsoleFIleName methodName argument `
+        php artisan.php ConsoleFIleName methodName argument 
 
 e.g if you Console name is Crawl and has method crawWebsite that accept argument $url
 
-        `php artisan.php Crawl crawWebsite 'http://url-to-crawl';`
+        php artisan.php Crawl crawWebsite 'http://url-to-crawl';
 
 * To run the application 
        

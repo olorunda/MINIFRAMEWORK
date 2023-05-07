@@ -1,10 +1,10 @@
 <?php
 
 
-namespace App\Console;
+namespace App\Consoles;
 
 use App\CoreClasses\Logger\Logger;
-class ScrapWebsite
+class Sample
 {
     public  $log;
     public function __construct()

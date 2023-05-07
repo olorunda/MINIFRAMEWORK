@@ -1,22 +1,15 @@
 #!/usr/bin/env php
 <?php
 
-
-require_once 'vendor/autoload.php';
-require_once 'config/bootstrap.php';
-
 if (PHP_SAPI !== 'cli') {
     exit("Run from CLI only!\n");
 }
 
-if($argv[1]=='serve'){
-    exec('php -S localhost:8000');
-}
+require_once 'vendor/autoload.php';
+require_once 'config/bootstrap.php';
+require_once  'app/CoreClasses/Mini/mini.php';
 
-$class_name="\\App\\Console\\$argv[1]";
-if($argv[1]=='Make'){
-    $class_name="\\App\\CoreClasses\\$argv[1]";
-}
+
 
 
 $method_name=$argv[2];

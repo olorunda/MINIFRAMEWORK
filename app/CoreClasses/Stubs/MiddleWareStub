@@ -1,7 +1,7 @@
 <?php
 
 
-namespace App\MiddleWare;
+namespace App\MiddleWares;
 
 use App\CoreClasses\Request\MiddleWare;
 

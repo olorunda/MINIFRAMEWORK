@@ -13,7 +13,10 @@ final class Logger
 
     public function log($type,$text){
         $text=$this->writeTextBasedOnErrorType($type,$text);
-        $fp = fopen(date('Ymd').'.log', 'a');//opens file in append mode
+        if(!is_dir(BASEPATH . "/logs")){
+            mkdir(BASEPATH . "/logs");
+        }
+        $fp = fopen(BASEPATH.'/logs/'.date('Ymd').'.log', 'a');//opens file in append mode
         fwrite($fp, $text."\n");
         fclose($fp);
         if($type=='message'){

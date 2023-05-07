@@ -19,12 +19,23 @@ class Make
 
     public function Command($command_name)
     {
-        $this->generateStub($command_name,'Console');
+        $this->generateStub($command_name,'Consoles');
     }
 
     public function MiddleWare($command_name)
     {
-        $this->generateStub($command_name,'MiddleWare');
+        $this->generateStub($command_name,'MiddleWares');
+    }
+
+    public function Migration($command_name)
+    {
+        $this->generateStub($command_name,'Migrations');
+    }
+
+    public function Model($command_name)
+    {
+        $this->generateStub($command_name,'Models');
+        $this->generateStub(strtolower($command_name).'s','Migrations');
     }
 
 
