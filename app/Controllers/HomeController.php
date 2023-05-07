@@ -4,6 +4,7 @@
 namespace App\Controllers;
 use App\CoreClasses\Controller\BaseController;
 use App\CoreClasses\Request\Request;
+use App\CoreClasses\Request\Session;
 use App\CoreClasses\View\HtmlView;
 use Illuminate\Database\Capsule\Manager;
 

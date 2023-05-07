@@ -9,7 +9,7 @@ use App\CoreClasses\Request\Route as Route2;
 $path=Route::getRoute();
 
 if($path=='/allUser' || $path=='/'){
-   return  Route2::get('/allUser','HomeController@index',['middleware'=>['adminonly']]);
+   return  Route2::get('/allUser','HomeController@index');
 }
 
 if($path=='/admin/user'){

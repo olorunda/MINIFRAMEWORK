@@ -42,6 +42,15 @@
 
     `php mini Make MiddleWare MiddleWareName`
     
+### Sessions
+
+* You can access the php session using the Session helper class
+
+        Session::put('key','value');
+        Session::get('key');
+        Session::destroy('key');
+        Session::all();
+    
 #### To Use Created MiddleWare 
    
    * In your route you can use it like this

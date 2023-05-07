@@ -5,11 +5,11 @@ namespace App\CoreClasses\Request;
 
 
 use App\CoreClasses\Traits\MiddleWareTrait;
-
+use App\CoreClasses\Traits\Session;
 class Route
 {
 
-use MiddleWareTrait;
+use MiddleWareTrait  ,Session;
     public static function getRoute()
     {
         return (new Request())->request()->path_info ?? '';
