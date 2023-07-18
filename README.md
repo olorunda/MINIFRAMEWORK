@@ -71,11 +71,11 @@ For Console Application
 
 To run console application
 
-        php artisan.php ConsoleFIleName methodName argument 
+        php mini ConsoleFIleName methodName argument 
 
 e.g if you Console name is Crawl and has method crawWebsite that accept argument $url
 
-        php artisan.php Crawl crawWebsite 'http://url-to-crawl';
+        php mini Crawl crawWebsite 'http://url-to-crawl';
 
 * To run the application 
        
