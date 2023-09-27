@@ -6,6 +6,7 @@
 
 * Create your controller in app/Controllers using this command 
 
+* Add Database Connection string in `config/bootstrap.php`
         php mini Make Controller ControllerName
     
     ##### to return an html view in your controller , 
