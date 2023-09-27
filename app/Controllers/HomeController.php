@@ -6,6 +6,7 @@ use App\CoreClasses\Controller\BaseController;
 use App\CoreClasses\Request\Request;
 use App\CoreClasses\Request\Session;
 use App\CoreClasses\View\HtmlView;
+use App\Models\User;
 use Illuminate\Database\Capsule\Manager;
 
 class HomeController extends BaseController
@@ -13,6 +14,7 @@ class HomeController extends BaseController
 
     public function __construct()
     {
+
 //        $this->middleware('adminonly');
     }
 
@@ -26,6 +28,7 @@ class HomeController extends BaseController
 
     public function admin(){
         $id= Request::get('id');
-        return 'I am admin '.$id;
+        $users=User::all();
+        return Request::json(['status'=>'success','data'=>$users],200);
     }
 }
