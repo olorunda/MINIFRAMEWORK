@@ -55,7 +55,7 @@
    
    * In your route you can use it like this
    
-         `Route2::get('/admin/user','HomeController@admin',['middleware'=>['MiddleWareName']])`
+         `Route::get('/admin/user','HomeController@admin',['middleware'=>['MiddleWareName']])`
    
    * In your controller , you can use it like this
    
