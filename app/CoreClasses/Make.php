@@ -32,6 +32,11 @@ class Make
         $this->generateStub($command_name,'Migrations');
     }
 
+    public function UpdateMigration($command_name)
+    {
+        $this->generateStub($command_name,'MigrationUpdates');
+    }
+
     public function Model($command_name)
     {
         $this->generateStub($command_name,'Models');

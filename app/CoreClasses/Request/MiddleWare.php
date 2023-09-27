@@ -4,8 +4,11 @@
 namespace App\CoreClasses\Request;
 
 
+use App\CoreClasses\Traits\JsonResponse;
+
 class MiddleWare
 {
+    use JsonResponse;
 
     public function __call($name, $arguments)
     {

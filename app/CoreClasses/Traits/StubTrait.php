@@ -6,7 +6,7 @@ use App\CoreClasses\Logger\Logger;
 
 trait StubTrait
 {
-    private final function generateStub($stub_name,$type)
+    private  function generateStub($stub_name,$type)
     {
         $type=rtrim($type,'s');
         (new Logger())->info('Creating  ' . $stub_name . ', Please Wait...');

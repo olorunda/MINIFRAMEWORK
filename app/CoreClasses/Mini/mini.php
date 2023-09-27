@@ -11,7 +11,16 @@ if(ucfirst($argv[1])=='Make'){
 
 if(ucfirst($argv[1])=='Migrate'){
     $class_name="\\App\\CoreClasses\\Migration\\$argv[1]";
+
     (new $class_name())->migrate();
+    exit('Migration Completed');
+}
+
+if(str_contains(ucfirst($argv[1]),'Migrate --path')){
+    $class_name="\\App\\CoreClasses\\Migration\\$argv[1]";
+
+    $path=explode('=',$argv[1])[1];
+    (new $class_name())->migrate($path);
     exit('Migration Completed');
 }
 

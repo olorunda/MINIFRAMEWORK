@@ -15,13 +15,13 @@ trait MiddleWareTrait
             $perm=isset($perm['middleware']) ?  $perm['middleware'] : $perm;
             foreach($perm as $per){
 
-                $middlewarename="App\\MiddleWare\\$per";
+                $middlewarename="App\\MiddleWares\\$per";
                 $middleware=(new $middlewarename());
                 $middleware->run();
             }
             return;
         }
-        $middlewarename="App\\MiddleWare\\$perm";
+        $middlewarename="App\\MiddleWares\\$perm";
         (new $middlewarename())->run();
     }
 
