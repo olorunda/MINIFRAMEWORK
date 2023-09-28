@@ -4,7 +4,7 @@ if($argv[1]=='serve'){
     exec('php -S localhost:8000');
 }
 
-$class_name="\\App\\Console\\$argv[1]";
+$class_name="\\App\\Consoles\\$argv[1]";
 if(ucfirst($argv[1])=='Make'){
     $class_name="\\App\\CoreClasses\\$argv[1]";
 }
